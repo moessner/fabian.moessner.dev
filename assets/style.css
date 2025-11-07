@@ -169,6 +169,65 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
 }
 
+.contact-form {
+  display: grid;
+  gap: 1rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.form-field label {
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.form-field input,
+.form-field textarea {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: rgba(15, 23, 42, 0.6);
+  color: var(--text);
+  font: inherit;
+  resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: rgba(37, 99, 235, 0.7);
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.25);
+}
+
+.contact-submit {
+  justify-self: start;
+  border: none;
+  border-radius: 999px;
+  padding: 0.75rem 1.5rem;
+  background: var(--gradient);
+  color: var(--text);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.contact-submit:hover,
+.contact-submit:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.35);
+  outline: none;
+}
+
+.contact-hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .stack > * + * {
   margin-top: 1rem;
 }

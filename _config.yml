@@ -18,15 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Fabian Moessner
+title: Fabian Mößner
 email: ""
 description: >-
-  Portfolio for Fabian Moessner, Software Developer in Stuttgart, Germany.
+  Portfolio of Fabian Mößner, Software Developer in Stuttgart, Germany.
 baseurl: ""
 url: "https://fabian.moessner.dev"
 lang: en
 linkedin_url: "https://www.linkedin.com/in/fabianmoessner"
 github_url: "https://github.com/moessner"
+formspree_endpoint: "https://formspree.io/f/xwpwggar"
 
 # Build settings
 theme: minima

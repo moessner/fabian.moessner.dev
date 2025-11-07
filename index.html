@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Fabian Mößner
-description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Germany.
+title: Software Developer
 ---
 
 <header class="profile-header">
@@ -47,6 +46,14 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
           />
         </svg>
         <span>GitHub</span>
+      </a>
+      <a class="link-card" href="#contact">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M4 4.5h16c.83 0 1.5.67 1.5 1.5v12c0 .83-.67 1.5-1.5 1.5H4a1.5 1.5 0 0 1-1.5-1.5v-12c0-.83.67-1.5 1.5-1.5Zm8 8.12L5.62 6.75H4l8 6.62L20 6.75h-1.62L12 12.62Z"
+          />
+        </svg>
+        <span>Contact</span>
       </a>
     </div>
   </div>
@@ -224,6 +231,29 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
         </div>
       </div>
     </article>
+  </section>
+  <section class="panel" id="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contact</h2>
+    <form
+      class="contact-form"
+      action="{{ site.formspree_endpoint }}"
+      method="POST"
+    >
+      <div class="form-field">
+        <label for="contact-name">Name</label>
+        <input id="contact-name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="form-field">
+        <label for="contact-email">Email</label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="form-field">
+        <label for="contact-message">Message</label>
+        <textarea id="contact-message" name="message" rows="5" required></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="Portfolio Contact">
+      <button class="contact-submit" type="submit">Send Message</button>
+    </form>
   </section>
 </main>
 
