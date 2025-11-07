@@ -2,10 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "name": "Open in Edge",
       "type": "msedge",
       "request": "launch",
-      "name": "Launch Edge against localhost",
-      "file": "${workspaceFolder}/index.html"
+      "url": "http://127.0.0.1:4000",
+      "preLaunchTask": "serve-jekyll"
     }
   ]
 }
