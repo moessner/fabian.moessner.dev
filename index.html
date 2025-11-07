@@ -31,6 +31,16 @@ title: Software Developer
       </div>
     </div>
     <div class="profile-links">
+      {% if site.cv_url %}
+      <a class="link-card" href="{{ site.cv_url | relative_url }}" download="{{ site.cv_download_name | default: 'Fabian-Moessner-CV.pdf' }}">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 17a1 1 0 0 1-.7-.29l-4-4a1 1 0 1 1 1.4-1.42L11 14.59V4a1 1 0 1 1 2 0v10.59l2.3-2.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-.7.29Zm7 3H5a1 1 0 1 1 0-2h14a1 1 0 0 1 0 2Z"
+          />
+        </svg>
+        <span>Download CV</span>
+      </a>
+      {% endif %}
       <a class="link-card" href="{{ site.linkedin_url }}" target="_blank" rel="noreferrer">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path

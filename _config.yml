@@ -28,6 +28,8 @@ lang: en
 linkedin_url: "https://www.linkedin.com/in/fabianmoessner"
 github_url: "https://github.com/moessner"
 formspree_endpoint: "https://formspree.io/f/xwpwggar"
+cv_url: "assets/CV_Fabian_Moessner.pdf"
+cv_download_name: "CV_Fabian_Moessner.pdf"
 
 # Build settings
 theme: minima
