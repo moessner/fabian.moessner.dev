@@ -32,7 +32,7 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
       </div>
     </div>
     <div class="profile-links">
-  <a class="link-card" href="{{ site.linkedin_url }}" target="_blank" rel="noreferrer">
+      <a class="link-card" href="{{ site.linkedin_url }}" target="_blank" rel="noreferrer">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path
             d="M4.98 3.5a2.5 2.5 0 1 1-.01 5.01 2.5 2.5 0 0 1 .01-5.01Zm-2.3 6.32h4.6V21H2.68V9.82Zm7.26 0h4.41v1.69h.06c.61-1.15 2.1-2.36 4.32-2.36 4.62 0 5.47 3.04 5.47 6.99V21h-4.6v-4.29c0-1.02-.02-2.33-1.42-2.33-1.43 0-1.65 1.11-1.65 2.26V21h-4.6V9.82Z"
@@ -40,7 +40,7 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
         </svg>
         <span>LinkedIn</span>
       </a>
-  <a class="link-card" href="{{ site.github_url }}" target="_blank" rel="noreferrer">
+      <a class="link-card" href="{{ site.github_url }}" target="_blank" rel="noreferrer">
         <svg viewBox="0 0 24 24" aria-hidden="true">
           <path
             d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.37 7.86 10.89.58.12.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.3-1.68-1.3-1.68-1.06-.73.08-.72.08-.72 1.18.08 1.81 1.21 1.81 1.21 1.04 1.78 2.72 1.27 3.38.97.1-.76.41-1.27.74-1.56-2.55-.29-5.23-1.28-5.23-5.72 0-1.26.45-2.29 1.2-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 5.83 0c2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.75.81 1.2 1.84 1.2 3.1 0 4.45-2.69 5.43-5.25 5.72.42.36.8 1.07.8 2.16 0 1.56-.01 2.82-.01 3.2 0 .3.21.67.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
@@ -51,6 +51,7 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
     </div>
   </div>
 </header>
+
 <main class="content container">
   <section class="panel" id="summary" aria-labelledby="summary-title">
     <h2 id="summary-title">Summary</h2>
@@ -67,7 +68,10 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
         <img src="{{ 'assets/bosch_logo.png' | relative_url }}" alt="Bosch logo">
         <div>
           <h3>Robert Bosch GmbH</h3>
-          <p class="tenure">5 yrs 3 mos · Stuttgart, Baden-Württemberg, Germany</p>
+          <p class="tenure">
+            <span class="tenure-duration" data-tenure-start="2020-09-01"></span>
+            Stuttgart, Baden-Württemberg, Germany · Hybrid
+          </p>
         </div>
       </div>
       <div class="role-list">
@@ -76,7 +80,7 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
           <div>
             <div class="role-heading">
               <h4>Software Developer</h4>
-              <p class="meta">Full-time · Aug 2023 – Present · Hybrid</p>
+              <p class="meta">Full-time · Aug 2023 – Present</p>
             </div>
             <p>
               Working in an international Scrum team on Bosch's first internal Developer Platform, enabling a unified
@@ -99,7 +103,7 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
           <div>
             <div class="role-heading">
               <h4>IT Specialist for Application Development (Apprenticeship)</h4>
-              <p class="meta">Apprenticeship · Sept 2020 – Aug 2023 · Stuttgart</p>
+              <p class="meta">Apprenticeship · Sept 2020 – Aug 2023</p>
             </div>
             <p>
               Supported the Network Security Monitoring and Endpoint Protection team by developing internal tooling to
@@ -133,7 +137,14 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
         <img src="{{ 'assets/matworks_logo.png' | relative_url }}" alt="Matworks logo">
         <div>
           <h3>Matworks GmbH – Materials Engineering Solutions</h3>
-          <p class="tenure">Sept 2019 – Sept 2020 · 1 yr 1 mo · Aalen, Germany</p>
+          <p class="tenure">
+            <span 
+              class="tenure-duration" 
+              data-tenure-start="2019-09-01" 
+              data-tenure-end="2020-09-01">
+            </span>
+            Aalen, Baden-Württemberg, Germany · On-site
+          </p>
         </div>
       </div>
       <div class="role-list">
@@ -142,7 +153,7 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
           <div>
             <div class="role-heading">
               <h4>Software Developer (Internship)</h4>
-              <p class="meta">Praktikum · On-site</p>
+              <p class="meta">Internship · Sept 2019 – Sept 2020</p>
             </div>
             <p>
               Developed custom desktop applications for automated microscope workflows using Windows Presentation
@@ -215,8 +226,9 @@ description: Portfolio for Fabian Mößner, Software Developer in Stuttgart, Ger
     </article>
   </section>
 </main>
+
 <footer class="site-footer">
   <div class="container">
-    <p>© 2025 Fabian Mößner. All rights reserved.</p>
+    <p>© <span data-current-year></span> Fabian Mößner. All rights reserved.</p>
   </div>
 </footer>
